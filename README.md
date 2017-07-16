@@ -41,7 +41,9 @@ Como obter o id do chat ?
 	Acesse o link  sua_url.com.br/?rota=getMensagens
            Nesse link, você consegue acessar todas as mensagens enviadas para o seu bot.
 
- Obs.: Essas mensagens são arrays. Array
+ Obs.: Essas mensagens são arrays. 
+ 
+     Array
     (
         [update_id] => 1111111
         [message] => Array
@@ -69,6 +71,6 @@ Como obter o id do chat ?
                 [text] => A mensagem …….
         )
 
-)
+    )
 
 
