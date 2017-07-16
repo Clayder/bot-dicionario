@@ -43,4 +43,12 @@ class Dicionario extends Controller
         // envia a mensagem
         $bot->pacoteMensagem($mensagem);
     }
+
+     /**
+     * @return void
+     */
+    public function getMensagens(){
+        $bot = new Bot();
+        $bot->processMessage();
+    }
 }

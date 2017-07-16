@@ -18,7 +18,7 @@ class Bot
         $length = count($response["result"]);
         for ($i = 0; $i < $length; $i++) {
             $update = $response["result"][$i];
-            // pre($update);
+            pre($update);
         }
 
     }
