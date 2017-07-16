@@ -8,6 +8,10 @@ O objetivo do bot, é enviar uma mensagem com alguma palavra/frase aleatória, p
 
 A ideia é ficar sempre revisando palavras/frases em inglês. 
 
+### Demo ####
+
+https://www.youtube.com/watch?v=OedDnGRtHjY&feature=youtu.be 
+
 ### Código ###
 
 https://bitbucket.org/peterclayder/bot-dicionario/src
