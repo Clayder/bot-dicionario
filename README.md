@@ -30,8 +30,8 @@ Nesse link, você consegue acessar todas as mensagens enviadas para o seu bot.
 
 Obs.: Essas mensagens são arrays.
 
-Array
-(
+  array
+  (
     [update_id] => 1111111
     [message] => Array
         (
@@ -58,7 +58,7 @@ Array
             [text] => A mensagem …….
         )
 
-)
+  )
 
 
 ### What is this repository for? ###
