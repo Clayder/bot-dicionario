@@ -1,12 +1,16 @@
-# README #
+<h1> README </h1>
 
-Nesse projeto eu desenvolvi um formulário e um bot para o telegram, com o intuito de me ajudar no estudo do inglês.
+<p> Nesse projeto eu desenvolvi um formulário e um bot para o telegram, com o intuito de me ajudar no estudo do inglês. </p>
 
-A função do formulário, é cadastrar palavras e frases em inglês, com as suas respectivas traduções. 
+<p> A função do formulário, é cadastrar palavras e frases em inglês, com as suas respectivas traduções. </p>
 
-O objetivo do bot, é enviar uma mensagem com alguma palavra/frase aleatória, para o chat do telegram.
+<p> O objetivo do bot, é enviar uma mensagem com alguma palavra/frase aleatória, para o chat do telegram. </p>
 
-A ideia é ficar sempre revisando palavras/frases em inglês.
+<p> A ideia é ficar sempre revisando palavras/frases em inglês. </p>
+
+<h2> Configurações  </h2>
+
+
 
 ### What is this repository for? ###
 
