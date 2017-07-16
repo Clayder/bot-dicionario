@@ -29,7 +29,7 @@ class Routes
                     $dicionario->cadastrar($dados);
                     break;
                 case "getPalavra":
-                    //$dicionario->getPalavra();
+                    $dicionario->getPalavra();
                     break;
 
                 default:
