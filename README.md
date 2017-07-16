@@ -8,6 +8,10 @@ O objetivo do bot, é enviar uma mensagem com alguma palavra/frase aleatória, p
 
 A ideia é ficar sempre revisando palavras/frases em inglês. 
 
+### Código ###
+
+https://bitbucket.org/peterclayder/bot-dicionario/src
+
 ### Configurações  ###
 
 * Instalar o banco de dados ( banco-de-dados.sql está na raiz do projeto )
@@ -61,3 +65,6 @@ Obs.: Essas mensagens são arrays.
     )
 
 
+### Como cadastrar palavras/frases ? ###
+
+Acessar: http//www.seu_site.com.br
