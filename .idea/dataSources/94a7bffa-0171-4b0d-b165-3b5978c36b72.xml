@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="lembrete-vocabulario@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="lembrete-vocabulario">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="blog-pxcode"/>
+    <schema id="4" parent="1" name="copona"/>
+    <schema id="5" parent="1" name="estoque_laravel"/>
+    <schema id="6" parent="1" name="estudo-wordpress"/>
+    <schema id="7" parent="1" name="gerenciador-projetos"/>
+    <schema id="8" parent="1" name="information_schema"/>
+    <schema id="9" parent="1" name="meu-site"/>
+    <schema id="10" parent="1" name="mudet674_pimpolhosbd"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="october"/>
+    <schema id="13" parent="1" name="opencart3"/>
+    <schema id="14" parent="1" name="pagekit"/>
+    <schema id="15" parent="1" name="pdv"/>
+    <schema id="16" parent="1" name="performance_schema"/>
+    <schema id="17" parent="1" name="phpmyadmin"/>
+    <schema id="18" parent="1" name="prestashop"/>
+    <schema id="19" parent="1" name="project-manager"/>
+    <schema id="20" parent="1" name="pxdelivery"/>
+    <schema id="21" parent="1" name="solo_app"/>
+    <schema id="22" parent="1" name="tarefas"/>
+    <schema id="23" parent="1" name="test"/>
+    <schema id="24" parent="1" name="teste"/>
+    <schema id="25" parent="1" name="wpanel"/>
+    <table id="26" parent="2" name="login"/>
+    <table id="27" parent="2" name="vocabulario"/>
+    <column id="28" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="26" name="usuario">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="26" name="senha">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="31" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="33" parent="27" name="palavra">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="27" name="palavraTraducao">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="27" name="frase">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="36" parent="27" name="fraseTraducao">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="37" parent="27" name="dateTime">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="38" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
