@@ -1,6 +1,6 @@
 # README #
 
-Nesse projeto eu desenvolvi um formulário e um bot para o telegram, com o intuito de me ajudar no estudo do inglês. <br/>
+Nesse projeto eu desenvolvi um formulário e um bot para o telegram, com o intuito de me ajudar no estudo do inglês. <br />
 
 	A função do formulário, é cadastrar palavras e frases em inglês, com as suas respectivas traduções. 
 	O objetivo do bot, é enviar uma mensagem com alguma palavra/frase aleatória, para o chat do telegram.
