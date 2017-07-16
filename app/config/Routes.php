@@ -29,6 +29,7 @@ class Routes
                     $dicionario->cadastrar($dados);
                     break;
                 case "getMensagens":
+
                     $dicionario->getMensagens();
                     break;
 
