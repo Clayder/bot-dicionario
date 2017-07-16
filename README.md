@@ -42,31 +42,31 @@ Como obter o id do chat ?
            Nesse link, você consegue acessar todas as mensagens enviadas para o seu bot.
 
  Obs.: Essas mensagens são arrays. Array
-(
-    [update_id] => 1111111
-    [message] => Array
-        (
-            [message_id] => 2222
-            [from] => Array
-                (
-                    [id] => 4444444
-                    [first_name] => Fulana
-                    [last_name] => Tal
-                    [username] => fulana-tal
-                    [language_code] => pt-BR
-                )
+    (
+        [update_id] => 1111111
+        [message] => Array
+            (
+                [message_id] => 2222
+                [from] => Array
+                    (
+                        [id] => 4444444
+                        [first_name] => Fulana
+                        [last_name] => Tal
+                        [username] => fulana-tal
+                        [language_code] => pt-BR
+                    )
 
-            [chat] => Array
-                (
-                    [id] => 555555 // É ESSE ID QUE VOCÊ QUER !!!!!!!!!!!!! 
-                    [first_name] => Fulana
-                    [last_name] => Tal
-                    [username] => fulana-tal
-                    [type] => private
-                )
+                [chat] => Array
+                    (
+                        [id] => 555555 // É ESSE ID QUE VOCÊ QUER !!!!!!!!!!!!! 
+                        [first_name] => Fulana
+                        [last_name] => Tal
+                        [username] => fulana-tal
+                        [type] => private
+                    )
 
-            [date] => 1500240993
-            [text] => A mensagem …….
+                [date] => 1500240993
+                [text] => A mensagem …….
         )
 
 )
