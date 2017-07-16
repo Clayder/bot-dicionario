@@ -28,20 +28,7 @@ Acesse o link: http//www.sua_url.com.br/?rota=getMensagens
 
 Nesse link, você consegue acessar todas as mensagens enviadas para o seu bot.
 
-Obs.: Essas mensagens são arrays.
-
- Como obter o token do telegram ?
-
-https://luizmarcus.com/php/como-criar-um-bot-para-o-telegram-em-php-parte-1/
-
-Como obter o id do chat ?
-
-	Depois que você configurou o seu bot e adicionou ele nos seus contatos, envie uma mensagem para ele.
-	O bot não vai responder !!
-	Acesse o link  sua_url.com.br/?rota=getMensagens
-           Nesse link, você consegue acessar todas as mensagens enviadas para o seu bot.
-
- Obs.: Essas mensagens são arrays. 
+Obs.: Essas mensagens são arrays. 
  
      Array
     (
