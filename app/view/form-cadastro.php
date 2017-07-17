@@ -2,10 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
 <div id="wrapper">
@@ -73,7 +76,7 @@
                         <input type="hidden" name="rota" value="cadastrar" />
                         <div class="form-group">
                             <label for="exampleInputEmail1">Palavra:</label>
-                            <input type="text" name="palavra" class="form-control" id="palavra" placeholder="">
+                            <input type="text" name="palavra" class="form-control" id="palavra" placeholder="" autofocus>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Tradução da palavra:</label>
@@ -100,7 +103,7 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 
-<script src="../../assets/js/index.js"></script>
+<script src="assets/js/index.js"></script>
 
 </body>
 </html>

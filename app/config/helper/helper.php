@@ -2,7 +2,7 @@
 
 function baseUrl($url = ""){
     if($url != ""){
-        return BASE_URL."/".$url;
+        return BASE_URL.$url;
     }else{
         return BASE_URL;
     }
