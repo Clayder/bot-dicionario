@@ -72,6 +72,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
+                    <?php flashDataMs("msgInserir"); ?>
                     <form action="" method="POST">
                         <input type="hidden" name="rota" value="cadastrar" />
                         <div class="form-group">

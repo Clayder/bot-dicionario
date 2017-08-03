@@ -2,8 +2,15 @@
 /**
  * @author Peter Clayder
  */
+
 namespace app\banco;
+
 use \PDO;
+
+/**
+ * Class Driver
+ * @package app\banco
+ */
 abstract class Driver
 {
     /**
@@ -14,15 +21,13 @@ abstract class Driver
     /**
      * @return void
      */
-    protected function connect(){
-        try
-        {
-            $this->pdo = new PDO( 'mysql:host=' . MYSQL_HOST . ';dbname=' . MYSQL_DB_NAME, MYSQL_USER, MYSQL_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    protected function connect()
+    {
+        try {
+            $this->pdo = new PDO('mysql:host=' . MYSQL_HOST . ';dbname=' . MYSQL_DB_NAME, MYSQL_USER, MYSQL_PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
             // Alerta de erro, se ocorrer algum problema
-            $this->pdo -> setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        }
-        catch ( PDOException $e )
-        {
+            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
             echo 'Erro ao conectar com o MySQL: ' . $e->getMessage();
         }
     }
@@ -30,7 +35,18 @@ abstract class Driver
     /**
      * @return void
      */
-    protected function disconnect(){
+    protected function disconnect()
+    {
         $this->pdo = null;
     }
+
+    /**
+     * @return PDO
+     */
+    public function getPdo()
+    {
+        return $this->pdo;
+    }
+
+
 }

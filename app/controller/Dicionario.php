@@ -5,7 +5,13 @@
 namespace app\controller;
 
 use app\model\telegram\Bot;
+use app\model\Dicionario as DicionarioModel;
+use app\banco\Bd;
 
+/**
+ * Class Dicionario
+ * @package app\controller
+ */
 class Dicionario extends Controller
 {
     /**
@@ -14,10 +20,14 @@ class Dicionario extends Controller
      */
     public function cadastrar($dados)
     {
-        $data = new \DateTime();
-        $dados['dateTime'] = $data->format("Y-m-d H:m:s");
-        $this->db->insert($dados);
-        $this->formCadastro();
+        $dicionario = new DicionarioModel();
+        $inserirDias = new \DateTime();
+        $dados['dateTime'] = $inserirDias->format("Y-m-d H:i:s");
+        $inserirDias->add(new \DateInterval("P1D"));
+        $dados['dateTimeExibir'] = $inserirDias->format("Y-m-d H:i:s");
+        $dados['qtd'] = 0;
+        $dicionario->cadastrar($dados);
+        header("Location: ".baseUrl());
     }
 
     /**
@@ -33,12 +43,17 @@ class Dicionario extends Controller
      */
     public function getPalavra()
     {
-        $qtdRegistros = $this->db->countAll();
-        // Gera um número aleatório entre, 1 e o último Id
-        $idRegistro = mt_rand(1, $qtdRegistros);
-        $dados = $this->db->get($idRegistro);
-        $mensagem = $dados['palavra']. ": ". $dados['palavraTraducao']."\n\n";
-        $mensagem = $mensagem . $dados['frase']. ": ". $dados['fraseTraducao']."\n";
+        $dicionario = new DicionarioModel();
+        $dicionario->exibirPalavra();
+        $mensagem = "";
+        if(Bd::getErro() !== " "){
+            $mensagem = Bd::getErro()."\n\n";
+            $mensagem = $mensagem . " ---------------------------------------- \n\n";
+        }
+        $mensagem = $mensagem . " PALAVRA: ".$dicionario->getPalavra(). " ==> ". $dicionario->getPalavraTraducao()."\n\n";
+        $mensagem = $mensagem . " FRASE: ".$dicionario->getFrase(). " ==> ". $dicionario->getFraseTraducao()."\n\n";
+        $mensagem = $mensagem . " ---------------------------------------- \n\n";
+        $mensagem = $mensagem . "Quantidade de exibições:  ".($dicionario->getQtd() + 1)."\n\n";
         $bot = new Bot();
         // envia a mensagem
         $bot->pacoteMensagem($mensagem);
