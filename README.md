@@ -12,10 +12,6 @@ A ideia é ficar sempre revisando palavras/frases em inglês.
 
 https://www.youtube.com/watch?v=OedDnGRtHjY&feature=youtu.be 
 
-### Código ###
-
-https://bitbucket.org/peterclayder/bot-dicionario/src
-
 ### Configurações  ###
 
 * Instalar o banco de dados ( banco-de-dados.sql está na raiz do projeto )
